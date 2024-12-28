@@ -30,7 +30,7 @@ sysinfo.xml
 .idea/
 .vs/
 
-# Packages installés via Unity Package Manager (si utilisés)
+# Installated packeges via Unity Package Manager (if used..)
 Packages/com.unity.*
 """
 
