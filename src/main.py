@@ -30,7 +30,7 @@ sysinfo.xml
 .idea/
 .vs/
 
-# Installated packeges via Unity Package Manager (if used..)
+# Installated packages via Unity Package Manager (if used..)
 Packages/com.unity.*
 """
 
@@ -44,33 +44,156 @@ media_extensions = {
     "Fichiers temporaires de sauvegarde": ["*.bak", "*.tmp"]
 }
 
-# Dictionnairy of multicontents things
-translations = {
+# Dictionnaries of multicontents things
+{
+  "translations": {
     "fr": {
-        "title": "Générateur de .gitignore pour Unity",
-        "select_project": "Sélectionnez le dossier de votre projet Unity :",
-        "exclude_files": "Choisissez les types de fichiers à exclure :",
-        "generate_button": "Générer .gitignore et README",
-        "ready": "Prêt à générer.",
-        "generating": "Génération en cours... Veuillez patienter.",
-        "success": "Les fichiers .gitignore et README.md ont été générés avec succès.",
-        "error": "Le chemin du projet est invalide.",
-        "about": "Nathan Chambrette - 2025",
-        "about_link": "https://example.com",
+      "title": "Générateur de .gitignore pour Unity",
+      "select_project": "Sélectionnez le dossier de votre projet Unity :",
+      "exclude_files": "Choisissez les types de fichiers à exclure :",
+      "generate_button": "Générer .gitignore et README",
+      "ready": "Prêt à générer.",
+      "generating": "Génération en cours... Veuillez patienter.",
+      "success": "Les fichiers .gitignore et README.md ont été générés avec succès.",
+      "error": "Le chemin du projet est invalide.",
+      "about": "Nathan Chambrette - 2025",
+      "about_link": "https://example.com"
     },
     "en": {
-        "title": "Unity .gitignore Generator",
-        "select_project": "Select your Unity project folder:",
-        "exclude_files": "Choose file types to exclude:",
-        "generate_button": "Generate .gitignore and README",
-        "ready": "Ready to generate.",
-        "generating": "Generating... Please wait.",
-        "success": ".gitignore and README.md files generated successfully.",
-        "error": "The project path is invalid.",
-        "about": "Nathan Chambrette - 2025",
-        "about_link": "https://example.com",
+      "title": "Unity .gitignore Generator",
+      "select_project": "Select your Unity project folder:",
+      "exclude_files": "Choose file types to exclude:",
+      "generate_button": "Generate .gitignore and README",
+      "ready": "Ready to generate.",
+      "generating": "Generating... Please wait.",
+      "success": ".gitignore and README.md files generated successfully.",
+      "error": "The project path is invalid.",
+      "about": "Nathan Chambrette - 2025",
+      "about_link": "https://example.com"
+    },
+    "es": {
+      "title": "Generador de .gitignore para Unity",
+      "select_project": "Selecciona la carpeta de tu proyecto de Unity:",
+      "exclude_files": "Elige los tipos de archivos a excluir:",
+      "generate_button": "Generar .gitignore y README",
+      "ready": "Listo para generar.",
+      "generating": "Generando... Por favor, espera.",
+      "success": "Los archivos .gitignore y README.md se han generado con éxito.",
+      "error": "La ruta del proyecto no es válida.",
+      "about": "Nathan Chambrette - 2025",
+      "about_link": "https://example.com"
+    },
+    "de": {
+      "title": ".gitignore-Generator für Unity",
+      "select_project": "Wählen Sie Ihren Unity-Projektordner aus:",
+      "exclude_files": "Wählen Sie die auszuschließenden Dateitypen:",
+      "generate_button": ".gitignore und README generieren",
+      "ready": "Bereit zur Generierung.",
+      "generating": "Wird generiert... Bitte warten.",
+      "success": ".gitignore und README.md wurden erfolgreich generiert.",
+      "error": "Der Projektpfad ist ungültig.",
+      "about": "Nathan Chambrette - 2025",
+      "about_link": "https://example.com"
+    },
+    "it": {
+      "title": "Generatore di .gitignore per Unity",
+      "select_project": "Seleziona la cartella del tuo progetto Unity:",
+      "exclude_files": "Scegli i tipi di file da escludere:",
+      "generate_button": "Genera .gitignore e README",
+      "ready": "Pronto per generare.",
+      "generating": "Generazione in corso... Attendere prego.",
+      "success": "I file .gitignore e README.md sono stati generati con successo.",
+      "error": "Il percorso del progetto non è valido.",
+      "about": "Nathan Chambrette - 2025",
+      "about_link": "https://example.com"
+    },
+    "pt": {
+      "title": "Gerador de .gitignore para Unity",
+      "select_project": "Selecione a pasta do seu projeto Unity:",
+      "exclude_files": "Escolha os tipos de arquivo a serem excluídos:",
+      "generate_button": "Gerar .gitignore e README",
+      "ready": "Pronto para gerar.",
+      "generating": "Gerando... Por favor, aguarde.",
+      "success": "Os arquivos .gitignore e README.md foram gerados com sucesso.",
+      "error": "O caminho do projeto é inválido.",
+      "about": "Nathan Chambrette - 2025",
+      "about_link": "https://example.com"
+    },
+    "zh": {
+      "title": "Unity .gitignore 生成器",
+      "select_project": "选择您的 Unity 项目文件夹：",
+      "exclude_files": "选择要排除的文件类型：",
+      "generate_button": "生成 .gitignore 和 README",
+      "ready": "准备生成。",
+      "generating": "正在生成... 请稍候。",
+      "success": ".gitignore 和 README.md 文件已成功生成。",
+      "error": "项目路径无效。",
+      "about": "Nathan Chambrette - 2025",
+      "about_link": "https://example.com"
+    },
+    "ja": {
+      "title": "Unity .gitignore ジェネレーター",
+      "select_project": "Unityプロジェクトのフォルダを選択してください:",
+      "exclude_files": "除外するファイルタイプを選択してください:",
+      "generate_button": ".gitignore と README を生成",
+      "ready": "生成の準備ができました。",
+      "generating": "生成中... お待ちください。",
+      "success": ".gitignore と README.md が正常に生成されました。",
+      "error": "プロジェクトのパスが無効です。",
+      "about": "Nathan Chambrette - 2025",
+      "about_link": "https://example.com"
+    },
+    "nl": {
+      "title": ".gitignore-generator voor Unity",
+      "select_project": "Selecteer de map van je Unity-project:",
+      "exclude_files": "Kies de bestandstypen die je wilt uitsluiten:",
+      "generate_button": ".gitignore en README genereren",
+      "ready": "Klaar om te genereren.",
+      "generating": "Bezig met genereren... Even geduld.",
+      "success": ".gitignore en README.md-bestanden zijn succesvol gegenereerd.",
+      "error": "Het projectpad is ongeldig.",
+      "about": "Nathan Chambrette - 2025",
+      "about_link": "https://example.com"
+    },
+    "pl": {
+      "title": "Generator pliku .gitignore dla Unity",
+      "select_project": "Wybierz folder projektu Unity:",
+      "exclude_files": "Wybierz typy plików do wykluczenia:",
+      "generate_button": "Generuj .gitignore i README",
+      "ready": "Gotowe do generowania.",
+      "generating": "Trwa generowanie... Proszę czekać.",
+      "success": "Pliki .gitignore i README.md zostały pomyślnie wygenerowane.",
+      "error": "Ścieżka projektu jest nieprawidłowa.",
+      "about": "Nathan Chambrette - 2025",
+      "about_link": "https://example.com"
+    },
+    "ru": {
+      "title": "Генератор .gitignore для Unity",
+      "select_project": "Выберите папку проекта Unity:",
+      "exclude_files": "Выберите типы файлов для исключения:",
+      "generate_button": "Сгенерировать .gitignore и README",
+      "ready": "Готово к генерации.",
+      "generating": "Генерация... Пожалуйста, подождите.",
+      "success": "Файлы .gitignore и README.md успешно сгенерированы.",
+      "error": "Неверный путь к проекту.",
+      "about": "Nathan Chambrette - 2025",
+      "about_link": "https://example.com"
+    },
+    "ar": {
+      "title": "مولّد .gitignore لـ Unity",
+      "select_project": "اختر مجلد مشروع Unity الخاص بك:",
+      "exclude_files": "اختر أنواع الملفات التي تريد استبعادها:",
+      "generate_button": "إنشاء .gitignore وREADME",
+      "ready": "جاهز للإنشاء.",
+      "generating": "جارٍ الإنشاء... يرجى الانتظار.",
+      "success": "تم إنشاء ملفات .gitignore وREADME.md بنجاح.",
+      "error": "مسار المشروع غير صالح.",
+      "about": "Nathan Chambrette - 2025",
+      "about_link": "https://example.com"
     }
+  }
 }
+
 
 # Trad funcs
 current_language = "fr"
@@ -107,7 +230,7 @@ def show_about():
     link.pack()
     link.bind("<Button-1>", lambda e: open_about_link())
 
-# Fonction for generate .gitignore file
+# Function for generate .gitignore file
 def generate_gitignore(project_path, selected_extensions):
     gitignore_path = os.path.join(project_path, ".gitignore")
     with open(gitignore_path, "w") as gitignore_file:
@@ -117,7 +240,7 @@ def generate_gitignore(project_path, selected_extensions):
                 gitignore_file.write(f"{ext}\n")  # Add each extension
     return gitignore_path
 
-# Fonction pour lister les packages
+# Function to list packages
 def list_packages(project_path):
     packages = []
     packages_path = os.path.join(project_path, "Packages")
