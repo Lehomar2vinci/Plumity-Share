@@ -7,6 +7,6 @@
 
  - please enyoy !
 
- - (if you have Windows system you can launch next installation of Python, you can turn on directly the .exe file)
+ - (if you have Windows system next installation of Python, you can turn on directly the .exe file)
 
  
